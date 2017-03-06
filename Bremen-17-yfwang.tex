@@ -93,8 +93,8 @@
 % - Use the \inst command only if there are several affiliations.
 % - Keep it simple, no one is interested in your street address.
 
-\date%[ASGRC WS1617] % (optional, should be abbreviation of conference name)
-{Masterkolloquium}
+\date[Bremen17] % (optional, should be abbreviation of conference name)
+{DPG-Frühjahrstagung 2017, Bremen}
 % - Either use conference name or its abbreviation.
 % - Not really informative to the audience, more for people (including
 %   yourself) who are reading the slides online
@@ -347,7 +347,7 @@ T_\text{H} \coloneqq \kappa/2\pp.
 whilst the Bose--Einstein state of equilibrium bosonic gas
 \begin{equation}
 \what{\rho}_\text{BE} = {Z}^{-1} \ee^{-\what{H}/T}
-Z^{-1} \sim Z^{-1} \sum_E \ee^{-E/T} \Ket{E}\Bra{E}
+\sim Z^{-1} \sum_E \ee^{-E/T} \Ket{E}\Bra{E}
 \end{equation}
 is \alert{thermal} and \alert{mixed}.
 \item How different are they? \cite{Kiefer2001,Hsu2009}
@@ -392,15 +392,15 @@ $\rbr{3+1}$d Einstein gravitation
 \only<1>{
 \item Can formally be canonically quantised as a constraint system
 
-\item Apply a \alert{Born--Oppenheimer}-type approximation to 
-$\sfun{\Psi}{g,\phi,f}$ \cite[§~5.4]{Kiefer2012}
+%\item Apply a \alert{Born--Oppenheimer}-type approximation to 
+%$\sfun{\Psi}{g,\phi,f}$ \cite[§~5.4]{Kiefer2012}
 
-\begin{itemize}
-\item Separate `\emph{Heavy, slow}' gravity and `\emph{light, fast}' matter
-\item Apply WKB approximation to the gravity part
-\item Assume disentanglement $\sfun{\Psi}{g,\phi,f} = \sfun{D}{g, \phi}
-\sfun{\chi}{g, \phi, f}$
-\end{itemize}
+%\begin{itemize}
+%\item Separate `\emph{Heavy, slow}' gravity and `\emph{light, fast}' matter
+%\item Apply WKB approximation to the gravity part
+%\item Assume disentanglement $\sfun{\Psi}{g,\phi,f} = \sfun{D}{g, \phi}
+%\sfun{\chi}{g, \phi, f}$
+%\end{itemize}
 
 \item Insert the ansatz $\sfun{\Psi}{g,\phi,f} = \ee^{\ii\rbr{\nG^{-1}S_0 + 
 S_1 + \nG S_2 + \ldots}}$
@@ -421,18 +421,19 @@ S_1 + \nG S_2 + \ldots}}$
 \cref{eq:functional-sch} is 
 %(eq.\ (48))
 \begin{equation}
-\sfun{\chi_0}{f} \propto
-	\cfun{\exp}{-\frac{1}{2}\int_{0}^{+\infty}\dd k\, k \, \rfun{f}{k}^2},
+\sfun{\chi_0}{f_\text{e}} \propto
+	\cfun{\exp}{-\frac{1}{2}\int_{0}^{+\infty}\dd k\, k \, 
+\rfun{f_\text{e}}{k}^2},
 \end{equation}
 while at late time it evolves to %(eq.\ (57) in \cite{Demers1996})
 \begin{equation}
-\sfun{\chi_b}{g} \propto 
+\sfun{\chi_b}{f_\text{l}} \propto 
 \cfun{\exp}{-\int_{-\infty}^{+\infty}\dd p\, p \,\rfun{\coth}{\frac{\pp 
-p}{2\lambda}} \vbr{\rfun{g}{p}}^2},
+p}{2\lambda}} \vbr{\rfun{f_\text{l}}{p}}^2},
 \label{eq:squeezed-wave-functional}
 \end{equation}
-where $\rfun{f}{k}$ and $\rfun{g}{p}$ are the Fourier transform of the matter 
-field at early and late time, respectively.
+where $\rfun{f_\text{e}}{k}$ and $\rfun{f_\text{l}}{p}$ are the Fourier 
+transform of the matter field at early and late time, respectively.
 %\begin{equation}
 %\rfun{g}{k} = \int_{-\infty}^{+\infty}\dd v\,
 %\frac{\ee^{-\ii k v}}{\sqrt{2\pp}} \rfun{f}{v},
@@ -483,7 +484,7 @@ T_\text{HD} \coloneqq \lambda/2\pp.
 %\end{empheq}
 The Fourier-mode correlators of different states can be calculated,
 \begin{equation}
-\abr{\rfun{\what{g}^\dagger}{p_1}\rfun{\what{g}}{p_2}} =
+\abr{\rfun{\what{f}^\dagger}{p_1}\rfun{\what{f}}{p_2}} =
 \frac{1}{T_\text{HD}} \rfun{\delta}{p_1 - p_2} \cdot
 \begin{cases}
 \frac{1}{2} \frac{1}{q},
@@ -496,11 +497,11 @@ The Fourier-mode correlators of different states can be calculated,
 \end{equation}
 where $q \coloneqq p_1/T_\text{HD}$.
 
-Note that
-\begin{equation}
-\abr{\rbr{\mbfDelta\what{g}}^2} = \abr{\what{g}^2} - \abr{\what{g}}^2 = 
-\abr{\what{g}^2} .
-\end{equation}
+%Note that
+%\begin{equation}
+%\abr{\rbr{\mbfDelta\what{f}}^2} = \abr{\what{f}^2} - \abr{\what{f}}^2 = 
+%\abr{\what{f}^2} .
+%\end{equation}
 \end{frame}
 
 \begin{frame}{Correlation of Fourier Modes}{Fluctuation of the Fourier 
@@ -518,15 +519,15 @@ modes: interpretation}
 \begin{itemize}
 	\item Vacuum fluctuation
 	\begin{equation}
-	\abr{\vbr{\what{g}}^2}_\text{vac} \sim \rfun{\Omicron}{q^{-1}}
+	\abr{\vbr{\what{f}}^2}_\text{vac} \sim \rfun{\Omicron}{q^{-1}}
 	\end{equation}
 
 	\item A black hole does \alert{not} alter the \alert{high}-energy
 	processes.
 	\begin{equation}
-	\abr{\vbr{\what{g}}^2}_{\chi_b} \approx
-	\abr{\vbr{\what{g}}^2}_\text{th} \approx
-	\abr{\vbr{\what{g}}^2}_\text{vac} \sim \rfun{\Omicron}{q^{-1}},
+	\abr{\vbr{\what{f}}^2}_{\chi_b} \approx
+	\abr{\vbr{\what{f}}^2}_\text{th} \approx
+	\abr{\vbr{\what{f}}^2}_\text{vac} \sim \rfun{\Omicron}{q^{-1}},
 	\quad \vbr{p} \gg T_\text{HD}
 	\end{equation}
 
@@ -534,9 +535,9 @@ modes: interpretation}
 	\alert{pure} state, while \alert{enhancing} that of the
 	\alert{thermal} state.
 	\begin{equation}
-	\rfun{\Omicron}{1} \sim \abr{\vbr{\what{g}}^2}_{\chi_b} \ll
-	\abr{\vbr{\what{g}}^2}_\text{vac} \ll
-	\abr{\vbr{\what{g}}^2}_\text{th} \sim \rfun{\Omicron}{q^{-2}},
+	\rfun{\Omicron}{1} \sim \abr{\vbr{\what{f}}^2}_{\chi_b} \ll
+	\abr{\vbr{\what{f}}^2}_\text{vac} \ll
+	\abr{\vbr{\what{f}}^2}_\text{th} \sim \rfun{\Omicron}{q^{-2}},
 	\quad \vbr{p} \ll T_\text{HD}
 	\end{equation}
 	\item Critical scale $\vbr{p} \sim T_\text{HD}$
@@ -546,76 +547,77 @@ modes: interpretation}
 
 \section{Distance between Density Operators}
 
-\begin{frame}{Another New Foundation of Statistical Physics 
-\cite{Popescu2006}}{Specific and easy version of the construction}
+%\begin{frame}{Another New Foundation of Statistical Physics 
+%\cite{Popescu2006}}{Specific and easy version of the construction}
 
-\begin{itemize}
-\item Total isolated system $U$ with \alert{energy} constraint $\abr{\what{H}_U} 
-\coloneqq E_U$, divided into a \alert{(sub)system} $S$ and an environment $E$
+%\begin{itemize}
+%\item Total isolated system $U$ with \alert{energy} constraint 
+%$\abr{\what{H}_U} \coloneqq E_U$, divided into a \alert{(sub)system} $S$ and 
+%an environment $E$
 
-\item Hilbert spaces $\mscrH_R \supseteq \mscrH_U = \mscrH_S \otimes \mscrH_E$;
-$\what{1}_R$ identity on $\mscrH_R$, dimension $d_R \coloneqq \dim \mscrH_R < 
-+\infty$
+%\item Hilbert spaces $\mscrH_R \supseteq \mscrH_U = \mscrH_S \otimes \mscrH_E$;
+%$\what{1}_R$ identity on $\mscrH_R$, dimension $d_R \coloneqq \dim \mscrH_R < 
+%+\infty$
 
-\item Equiprobable / maximal-ignorant state of $U$
-\begin{equation}
-\what{\mscrE}_R \coloneqq d_R^{-1} \what{1}_R \in \mscrH_R
-\end{equation}
+%\item Equiprobable / maximal-ignorant state of $U$
+%\begin{equation}
+%\what{\mscrE}_R \coloneqq d_R^{-1} \what{1}_R \in \mscrH_R
+%\end{equation}
 
-\item Hamiltonians $\what{H}_U = \what{H}_S + \what{H}_E + \what{H}_\text{int}$
+%\item Hamiltonians $\what{H}_U = \what{H}_S + \what{H}_E + \what{H}_\text{int}$
 
-\item \alert{Canonical state} of $S$ with energy 
-constraint \cite[§~28]{Landau1980}
-\begin{equation}
-\what{\Omega}_S^\rbr{\text{E}} \coloneqq \tr_E \what{\mscrE}_R 
-\propto\rfun{\exp}{- 
-\what{H}_S/T_\text{th}}
-\end{equation}
+%\item \alert{Canonical state} of $S$ with energy 
+%constraint \cite[§~28]{Landau1980}
+%\begin{equation}
+%\what{\Omega}_S^\rbr{\text{E}} \coloneqq \tr_E \what{\mscrE}_R 
+%\propto\rfun{\exp}{- 
+%\what{H}_S/T_\text{th}}
+%\end{equation}
 
-\item \alert{Theorem}: $\forall \Ket{\phi} \in \mscrH_R$, the reduced state of 
-$S$
-\begin{empheq}[box=\fbox]{equation}
-\tr_E \Ket{\phi}\Bra{\phi} \eqqcolon \rfun{\what{\rho}_S}{\phi} \approx 
-\what{\Omega}_S^\rbr{\text{E}}.
-\end{empheq}
+%\item \alert{Theorem}: $\forall \Ket{\phi} \in \mscrH_R$, the reduced state of 
+%$S$
+%\begin{empheq}[box=\fbox]{equation}
+%\tr_E \Ket{\phi}\Bra{\phi} \eqqcolon \rfun{\what{\rho}_S}{\phi} \approx 
+%\what{\Omega}_S^\rbr{\text{E}}.
+%\end{empheq}
 
-\end{itemize}
+%\end{itemize}
 
-\end{frame}
+%\end{frame}
 
 
-\begin{frame}{Another New Foundation of Statistical Physics 
-\cite{Popescu2006}}{Generic and exact version of the construction}
-
-\begin{itemize}
-\item \alert{Arbitrary} constraint $R$; study the \alert{trace 
-distance} $T$ between $\rfun{\what{\rho}_S}{\phi}$ and $\what{\Omega}_S$
-
-\item Lemma: \alert{average distance} is small w.r.t.\ $d_S/d_E^\text{eff}$
-\begin{equation}
-\abr{\rfun{T}{\rfun{\what{\rho}_S}{\phi}, \what{\Omega}_S}} \le 
-\tfrac{1}{2}\sqrt{d_S/d_E^\text{eff}}
-\end{equation}
-
-\item Theorem: \alert{probability of large deviation} is exponentially 
-small w.r.t.\ the distance; an easy version
-\begin{equation}
-\frac{\sfun{V}{\cbr{\Ket{\phi} \,\Big |\,
-\rfun{T}{\rfun{\what{\rho}_S}{\phi}, \what{\Omega}_S} \geq d_R^{-\frac{1}{3}}}}}
-{\sfun{V}{\cbr{\Ket{\phi} }}} \leq
-4\rfun{\exp}{- \frac{2d_R^{\frac{1}{3}}}{9\pp^3} }
-\end{equation}
-
-\item Effective dimension of $E$: setting
-$\what{\Omega}_E = \tr_S \what{\mscrE}_R$,
-\begin{equation}
-d_U/d_S \equiv d_E \ge d_E^\text{eff}
-\coloneqq \rbr{\tr \what{\Omega}_E^2}^{-1} \ge d_R/d_S.
-\end{equation}
-
-\end{itemize}
-
-\end{frame}
+% \begin{frame}{Another New Foundation of Statistical Physics 
+% \cite{Popescu2006}}{Generic and exact version of the construction}
+% 
+% \begin{itemize}
+% \item \alert{Arbitrary} constraint $R$; study the \alert{trace 
+% distance} $T$ between $\rfun{\what{\rho}_S}{\phi}$ and $\what{\Omega}_S$
+% 
+% \item Lemma: \alert{average distance} is small w.r.t.\ $d_S/d_E^\text{eff}$
+% \begin{equation}
+% \abr{\rfun{T}{\rfun{\what{\rho}_S}{\phi}, \what{\Omega}_S}} \le 
+% \tfrac{1}{2}\sqrt{d_S/d_E^\text{eff}}
+% \end{equation}
+% 
+% \item Theorem: \alert{probability of large deviation} is exponentially 
+% small w.r.t.\ the distance; an easy version
+% \begin{equation}
+% \frac{\sfun{V}{\cbr{\Ket{\phi} \,\Big |\,
+% \rfun{T}{\rfun{\what{\rho}_S}{\phi}, \what{\Omega}_S} \geq d_R^{-\frac{1}{3}}}}}
+% {\sfun{V}{\cbr{\Ket{\phi} }}} \leq
+% 4\rfun{\exp}{- \frac{2d_R^{\frac{1}{3}}}{9\pp^3} }
+% \end{equation}
+% 
+% \item Effective dimension of $E$: setting
+% $\what{\Omega}_E = \tr_S \what{\mscrE}_R$,
+% \begin{equation}
+% d_U/d_S \equiv d_E \ge d_E^\text{eff}
+% \coloneqq \rbr{\tr \what{\Omega}_E^2}^{-1} \ge d_R/d_S.
+% \end{equation}
+% 
+% \end{itemize}
+% 
+% \end{frame}
 
 \begin{frame}{Trace Distance \cite[ch.~9]{Wilde2009}}{Definitions}
 \begin{itemize}
@@ -625,9 +627,9 @@ d_U/d_S \equiv d_E \ge d_E^\text{eff}
 \tr \sqrt{\rbr{\what{M}-\what{N}}^\dagger\rbr{\what{M}-\what{N}}}
 \label{eq:def-trace-dist}
 \end{equation}
-\begin{itemize}
-\item Positivity, homogeneity, triangle ineq., isometric inv.
-\end{itemize}
+% \begin{itemize}
+% \item Positivity, homogeneity, triangle ineq., isometric inv.
+% \end{itemize}
 \item For \alert{density operators} $\what{\rho}$ and $\what{\sigma}$,
 \begin{itemize}
 \item $0 \le \rfun{T}{\what{\rho}, \what{\sigma}} \le 1.$
@@ -647,27 +649,27 @@ where we only need
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Trace Distance \cite[ch.~9]{Wilde2009}}{Interpretation}
-\begin{itemize}
-\item Maximal probability-difference obtainable
-\begin{equation}
-\rfun{T}{\what{\rho}, \what{\sigma}} = \max_{0 \le \what{\Lambda} \le \what{1}}
-\cfun{\tr}{\what{\Lambda}\rbr{\what{\rho}-\what{\sigma}}},
-\end{equation}
-where all eigenvalues of $\what{\Lambda}$ are in the range $\sbr{0,1}$
-\item E.g.\ $\what{\Lambda} \coloneqq \Ket{\alpha}\Bra{\alpha}$, $\Ket{\alpha}$
-eigenstate of $\what{\Alpha}$ with eigenvalue $\alpha$
-\begin{itemize}
-\item $\cfun{\tr}{\what{\Lambda}\what{\rho}}$: the probability of getting
-$\alpha$ in measuring $\what{\Alpha}$
-\item $\cfun{\tr}{\what{\Lambda}\rbr{\what{\rho}-\what{\sigma}}}$: the
-difference of the probability above
-\item $\rfun{T}{\what{\rho}, \what{\sigma}}$: the maximal value of the 
-difference above
-\end{itemize}
-\end{itemize}
-
-\end{frame}
+% \begin{frame}{Trace Distance \cite[ch.~9]{Wilde2009}}{Interpretation}
+% \begin{itemize}
+% \item Maximal probability-difference obtainable
+% \begin{equation}
+% \rfun{T}{\what{\rho}, \what{\sigma}} = \max_{0 \le \what{\Lambda} \le \what{1}}
+% \cfun{\tr}{\what{\Lambda}\rbr{\what{\rho}-\what{\sigma}}},
+% \end{equation}
+% where all eigenvalues of $\what{\Lambda}$ are in the range $\sbr{0,1}$
+% \item E.g.\ $\what{\Lambda} \coloneqq \Ket{\alpha}\Bra{\alpha}$, $\Ket{\alpha}$
+% eigenstate of $\what{\Alpha}$ with eigenvalue $\alpha$
+% \begin{itemize}
+% \item $\cfun{\tr}{\what{\Lambda}\what{\rho}}$: the probability of getting
+% $\alpha$ in measuring $\what{\Alpha}$
+% \item $\cfun{\tr}{\what{\Lambda}\rbr{\what{\rho}-\what{\sigma}}}$: the
+% difference of the probability above
+% \item $\rfun{T}{\what{\rho}, \what{\sigma}}$: the maximal value of the 
+% difference above
+% \end{itemize}
+% \end{itemize}
+% 
+% \end{frame}
 
 
 
@@ -695,21 +697,8 @@ fidelity and \cref{eq:ineq-fvdg}}}
 
 \only<1>{
 \begin{itemize}
-%\item Consider a general Gaussian state
-%\begin{equation}
-%\Braket{g | \omega} 
-%\propto \ee^{-\frac{\omega}{2}g^2}
-%\end{equation}
-%of a harmonic oscillator $\what{H} = \frac{1}{2}\rbr{\what{\pi}^2
-%+ \Omega^2 \what{g}^2}$.
 
-%\item $\rfun{F}{\Ket{\omega}, \rfun{\what{\rho}}{T}}$ can be exactly calculated,
-%with $\rfun{\what{\rho}}{T}$ being thermal at arbitrary temperature $T$
-
-%\item Taking $\Omega = p$, $\omega = p\,\coth\frac{\pp p}{2\lambda}$ 
-%and $T = T_\text{HD}$ (%
-%\crefrange{eq:squeezed-wave-functional}{eq:hawking-dilaton}),
-\item $\sfun{\chi}{f} \sim S$, $\sfun{\Psi}{g, \phi, f} \sim U$
+%\item $\sfun{\chi}{f} \sim S$, $\sfun{\Psi}{g, \phi, f} \sim U$
 
 \item The pure wave functional can sloppily be decomposed $\sfun{\chi_b}{g} 
 \sim \sum_p \rfun{\chi_b^\rbr{p}}{g_p} \equiv \sum_p \Braket{g_p | 
@@ -755,7 +744,7 @@ u \coloneqq \ee^q \equiv \ee^{\vbr{p}/T_\text{HD}}.
 \sum_p \rfun{g}{p} \to \frac{1}{2\pp\Lambda} \int \dd p\,\rfun{g}{p},
 \end{equation}
 
-\item Analogously, to regularising a positive product
+\item Analogously, to regularise a product
 \begin{equation}
 \prod_p \rfun{f}{p} \equiv \cfun{\exp}{\sum_p 
 \ln\rfun{f}{p}} \to \cfun{\exp}{\frac{1}{2\pp\Lambda}
@@ -805,13 +794,13 @@ Trace distance: goes exponentially \alert{small} with black hole
   \item
     Outlook
     \begin{itemize}
-	\item Understand the dilaton gravity model
+%	\item Understand the dilaton gravity model
 	\item Understand the Fourier-mode fluctuation
 	\item Evaluate the real space correlator
-	\item Understand practical meaning of trace distance
+%	\item Understand practical meaning of trace distance
 	\item Understand the regulator in total trace distance
 	\item Evaluate the exact trace distance
-	\item Include the gravitational wave functional
+%	\item Include the gravitational wave functional
     \end{itemize}
   \end{itemize}
 \end{frame}

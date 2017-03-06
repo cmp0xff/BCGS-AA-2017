@@ -1,3 +1,6 @@
 [submodule "graphics"]
 	path = graphics
 	url = https://github.com/cmp0xff/graph-pure-mixed
+[submodule "logos"]
+	path = logos
+	url = https://github.com/cmp0xff/logos

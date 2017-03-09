@@ -75,7 +75,7 @@
 \subtitle{A Comparison of Pure-state and Thermal Description}
 
 \author[Wang] % (optional, use only with lots of authors)
-{Yi-Fan Wang 王一帆}
+{Yi-Fan Wang 王\ 一帆, Claus Kiefer}
 %\inst{1} \and %S.~Another\inst{2}}
 % - Give the names in the same order as the appear in the paper.
 % - Use the \inst{?} command only if the authors have different
@@ -303,22 +303,24 @@ defernumbers=true]%
 
 \section{Hawking Radiation}
 
-\begin{frame}{Hawking Radiation}{Background space-time: sperically collapsing body}
+\begin{frame}{Hawking Radiation}{Background space-time: spherically collapsing 
+body}
 \begin{center}
 \input{./graphics/graph_hawking_einstein}
 \end{center}
 \end{frame}
 
-\begin{frame}{Hawking Radiation}{Result and interpretation}
+\begin{frame}{Hawking Radiation}{Results and interpretation 
+\cite{HAWKING1974,Hawking1975}}
 
 \begin{itemize}
 \item An early-time \alert{vacuum} on $\mscrI^-$ in collapsing background
 \begin{equation}
 \rfun{\what{a}}{p}\Ket{h} \coloneqq 0\quad\Rightarrow\quad
-\abr{\rfun{\what{n}_a}{p}}_h \equiv 0
+\Braket{h | \rfun{\what{n}_a}{p} | h} \eqqcolon \abr{\rfun{\what{n}_a}{p}}_h 
+\equiv 0
 \end{equation}
 evolves to a late-time state on $\mscrI^+\cup\mscrh^+$ \alert{with particles}
-\cite{HAWKING1974}
 \begin{equation}
 \abr{\rfun{\what{n}_b}{\omega}}_h \approx
 \Gamma_\omega\rbr{\ee^{2\pp\omega/\kappa}-1}^{-1}.
@@ -329,7 +331,7 @@ evolves to a late-time state on $\mscrI^+\cup\mscrh^+$ \alert{with particles}
 \abr{\rfun{\what{n}}{\omega}}_\text{BE} = \rbr{\ee^{\omega/T} - 1}^{-1}, 
 \end{equation}
 one may conclude that \cref{eq:hawking-distri} describes a grey-body
-radiation with the \alert{Hawking temperature} \cite{Hawking1975},
+radiation with the \alert{Hawking temperature},
 \begin{equation}
 T_\text{H} \coloneqq \kappa/2\pp.
 \end{equation}
@@ -375,7 +377,7 @@ where in \cref{eq:action-CGHS-dilaton-eli}, the \alert{kinetic term} of the
 dilaton field $\phi$ is eliminated by substituting $\phi = \ee^{-2\ol{\phi}}$ 
 and $g_{\alpha\beta} = \ee^{-2\ol{\phi}} \ol{g}_{\alpha\beta}$.
 \item Has a solution which \alert{resembles} the collapsing body in 
-$\rbr{3+1}$d Einstein gravitation
+$\rbr{3+1}$-dimensional Einstein gravitation
 \end{itemize}}
 
 \only<2>{
@@ -415,7 +417,8 @@ S_1 + \nG S_2 + \ldots}}$
 \what{H}_\text{m} &\equiv \frac{1}{2}\int_{0}^{+\infty} \dd k\,
 \rbr{-\frac{\mbfdelta^2}{\mbfdelta \rfun{f^2}{k}} + k^2 \rfun{f^2}{k}}.
 \end{align}
-\end{itemize}}
+\end{itemize}
+\item A quantum field theory in curved space-time can be derived!}
 
 \only<2>{
 \item At early time, the \alert{ground-state} solution to 
@@ -635,11 +638,11 @@ modes: interpretation}
 \begin{itemize}
 \item $0 \le \rfun{T}{\what{\rho}, \what{\sigma}} \le 1.$
 \item Controlled by \alert{fidelity} in \cite{Fuchs1999}
-\begin{equation}
+\begin{empheq}[box=\fbox]{equation}
 1 - \rfun{F}{\what{\rho},\what{\sigma}} \le \rfun{T}{\what{\rho},\what{\sigma}}
 \le \sqrt{1 - \rfun{F^2}{\what{\rho},\what{\sigma}}},
 \label{eq:ineq-fvdg}
-\end{equation}
+\end{empheq}
 where we only need
 \begin{equation}
 \rfun{F}{\Ket{\alpha},\what{\sigma}} \coloneqq \sqrt{\Braket{\alpha | 
@@ -701,9 +704,9 @@ fidelity and \cref{eq:ineq-fvdg}}}
 
 %\item $\sfun{\chi}{f} \sim S$, $\sfun{\Psi}{g, \phi, f} \sim U$
 
-\item The pure wave functional can sloppily be decomposed $\sfun{\chi_b}{g} 
-\sim \sum_p \rfun{\chi_b^\rbr{p}}{g_p} \equiv \sum_p \Braket{g_p | 
-\chi_b^{\rbr{p}}}$, where $g_p \coloneqq \rfun{g}{p}$
+\item The pure wave functional can sloppily be decomposed $\sfun{\chi_b}{f} 
+\sim \sum_p \rfun{\chi_b^\rbr{p}}{f_p} \equiv \sum_p \Braket{f_p | 
+\chi_b^{\rbr{p}}}$, where $f_p \coloneqq \rfun{f}{p}$
 
 \item So does the thermal density operator $\rfun{\what{\rho}_\text{th}}{T} \sim
 \bigotimes_p \rfun{\what{\rho}_\text{th}^\rbr{p}}{T}$

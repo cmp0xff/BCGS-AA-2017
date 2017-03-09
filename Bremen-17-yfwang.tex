@@ -155,6 +155,11 @@ defernumbers=true]%
 \newcommand{\ee}{{\Bbbe}}
 \newcommand{\pp}{{\Bbbpi}}
 
+\newcommand{\lc}{\mitsansc} % speed of light in vacuum
+\newcommand{\bk}{\mitsansk} % Boltzmann's constant
+\newcommand{\phs}{\hslash} % reduced Planck constant
+\newcommand{\ph}{\Planckconst} % Planck constant
+
 % Bracket-like
 \newcommand{\rbr}[1]{{\left(#1\right)}}
 \newcommand{\sbr}[1]{{\left[#1\right]}}
@@ -333,7 +338,7 @@ evolves to a late-time state on $\mscrI^+\cup\mscrh^+$ \alert{with particles}
 one may conclude that \cref{eq:hawking-distri} describes a grey-body
 radiation with the \alert{Hawking temperature},
 \begin{equation}
-T_\text{H} \coloneqq \kappa/2\pp.
+T_\text{H} \coloneqq \kappa/2\pp \equiv \phs/\lc\bk \cdot \kappa/2\pp.
 \end{equation}
 
 \end{itemize}
@@ -349,7 +354,7 @@ T_\text{H} \coloneqq \kappa/2\pp.
 \end{equation}
 whilst the Bose--Einstein state of equilibrium bosonic gas
 \begin{equation}
-\what{\rho}_\text{BE} = {Z}^{-1} \ee^{-\what{H}/T}
+\rfun{\what{\rho}_\text{BE}}{T} = {Z}^{-1} \ee^{-\what{H}/T}
 \sim Z^{-1} \sum_E \ee^{-E/T} \Ket{E}\Bra{E}
 \end{equation}
 is \alert{thermal} and \alert{mixed}.
@@ -393,7 +398,12 @@ $\rbr{3+1}$-dimensional Einstein gravitation
 
 \begin{itemize}
 \only<1>{
-\item Can formally be canonically quantised as a constraint system
+\item (Formally) canonical quantisation as a constraint system
+\begin{equation}
+ \what{\mscrH}_\parallel \sfun{\Psi}{g,\phi,f} = 0, \qquad
+ \what{\mscrH}_\perp  \sfun{\Psi}{g,\phi,f} = 0.
+\end{equation}
+
 
 %\item Apply a \alert{Born--Oppenheimer}-type approximation to 
 %$\sfun{\Psi}{g,\phi,f}$ \cite[§~5.4]{Kiefer2012}
@@ -409,10 +419,11 @@ $\rbr{3+1}$-dimensional Einstein gravitation
 S_1 + \nG S_2 + \ldots}}$
 
 \begin{itemize}
-\item Order $\nG^{-1}$: Hamilton--Jacobi equation for pure gravity
-\item Order $\nG^{0}$: functional \alert{Schrödinger equation for matter}
+\item $\rfun{\Omicron}{\nG^{-1}}$: Hamilton--Jacobi equation for pure gravity
+\item $\rfun{\Omicron}{\nG^0}$: $\sfun{\Psi}{g,\phi,f} = \sfun{D}{g, \phi}
+\sfun{\chi}{g, \phi, f}$; functional \alert{Schrödinger equation for matter}
 \begin{align}
-\ii \frpa{\chi}{t} &= \what{H}_\text{m} \chi,
+\ii \frpa{}{t}\sfun{\chi}{f} &= \what{H}_\text{m} \sfun{\chi}{f},
 \label{eq:functional-sch} \\
 \what{H}_\text{m} &\equiv \frac{1}{2}\int_{0}^{+\infty} \dd k\,
 \rbr{-\frac{\mbfdelta^2}{\mbfdelta \rfun{f^2}{k}} + k^2 \rfun{f^2}{k}}.
@@ -711,7 +722,7 @@ fidelity and \cref{eq:ineq-fvdg}}}
 \item So does the thermal density operator $\rfun{\what{\rho}_\text{th}}{T} \sim
 \bigotimes_p \rfun{\what{\rho}_\text{th}^\rbr{p}}{T}$
 
-\item Fidelity in \cref{eq:ineq-fvdg} can be factorised as well
+\item Fidelity (in \cref{eq:ineq-fvdg}) can be factorised as well
 \begin{equation}
 F \equiv \Braket{\chi_b | \what{\rho}_\text{th} | \chi_b}^\frac{1}{2} \sim
 \prod_p \Braket{\chi_b^{\rbr{p}} | \what{\rho}_\text{th}^{\rbr{p}}

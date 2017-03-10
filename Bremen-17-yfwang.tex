@@ -72,7 +72,7 @@
 \title%[Short Paper Title] % (optional, use only with long paper titles)
 {Hawking Radiation}
 
-\subtitle{A Comparison of Pure-state and Thermal Description}
+\subtitle{A Comparison of Pure-state and Thermal Descriptions}
 
 \author[Wang] % (optional, use only with lots of authors)
 {Yi-Fan Wang 王\ 一帆, Claus Kiefer}
@@ -364,10 +364,9 @@ is \alert{thermal} and \alert{mixed}.
 
 \section{Model of Gravitation}
 
-\begin{frame}{$\rbr{1+1}$-dimensional Dilaton Gravity Model}{Classical theory
-\only<1>{1}\only<2>{2}/2 \cite{Callan1992,Demers1996,Ashtekar2011}}
+\begin{frame}[allowframebreaks]{$\rbr{1+1}$-dimensional Dilaton Gravity 
+Model}{Classical theory \cite{Callan1992,Demers1996,Ashtekar2011}}% 1/2}
 
-\only<1>{
 \begin{itemize}
 \item The action of the dilaton gravity model reads
 \begin{align}
@@ -383,21 +382,24 @@ dilaton field $\phi$ is eliminated by substituting $\phi = \ee^{-2\ol{\phi}}$
 and $g_{\alpha\beta} = \ee^{-2\ol{\phi}} \ol{g}_{\alpha\beta}$.
 \item Has a solution which \alert{resembles} the collapsing body in 
 $\rbr{3+1}$-dimensional Einstein gravitation
-\end{itemize}}
+\end{itemize}
 
-\only<2>{
+%\end{frame}
+
+%\begin{frame}{$\rbr{1+1}$-dimensional Dilaton Gravity Model}{Classical theory
+%\cite{Callan1992,Demers1996,Ashtekar2011} 2/2}
+
 \begin{center}
 \input{./graphics/graph_hawking_CGHS}
-\end{center}}
+\end{center}
 
 \end{frame}
 
 
-\begin{frame}{$\rbr{1+1}$-dimensional Dilaton Gravity Model}{Quantum theory
-\only<1>{1}\only<2>{2}/2 \cite{Demers1996}}
+\begin{frame}[allowframebreaks]{$\rbr{1+1}$-dimensional Dilaton Gravity 
+Model}{Quantum theory \cite{Demers1996}}
 
 \begin{itemize}
-\only<1>{
 \item (Formally) canonical quantisation as a constraint system
 \begin{equation}
  \what{\mscrH}_\parallel \sfun{\Psi}{g,\phi,f} = 0, \qquad
@@ -429,9 +431,8 @@ S_1 + \nG S_2 + \ldots}}$
 \rbr{-\frac{\mbfdelta^2}{\mbfdelta \rfun{f^2}{k}} + k^2 \rfun{f^2}{k}}.
 \end{align}
 \end{itemize}
-\item A quantum field theory in curved space-time can be derived!}
+\item A quantum field theory in curved space-time can be derived!
 
-\only<2>{
 \item At early time, the \alert{ground-state} solution to 
 \cref{eq:functional-sch} is 
 %(eq.\ (48))
@@ -462,7 +463,7 @@ leading to a Hawking-like \alert{black-body temperature}
 \begin{empheq}[box=\fbox]{equation}
 T_\text{HD} \coloneqq \lambda/2\pp.
 \label{eq:hawking-dilaton}
-\end{empheq}}
+\end{empheq}
 
 \end{itemize}
 
@@ -706,11 +707,9 @@ where we only need
 
 %\end{frame}
 
-\begin{frame}{Distances between the Density Operators}{\only<1-2>{Single-mode 
-trace distances}\only<3-4>{All-mode trace distance}\only<2,4>{, bounds set by 
-fidelity and \cref{eq:ineq-fvdg}}}
+\begin{frame}[allowframebreaks]{Single-mode Distances between the Density 
+Operators}{Bounds set by fidelity and \cref{eq:ineq-fvdg}}
 
-\only<1>{
 \begin{itemize}
 
 %\item $\sfun{\chi}{f} \sim S$, $\sfun{\Psi}{g, \phi, f} \sim U$
@@ -735,24 +734,21 @@ F \equiv \Braket{\chi_b | \what{\rho}_\text{th} | \chi_b}^\frac{1}{2} \sim
 u \coloneqq \ee^q \equiv \ee^{\vbr{p}/T_\text{HD}}.
 \label{eq:fidelity-pt}
 \end{equation}
-\end{itemize}}
+\end{itemize}
 
-\only<2>{
 \begin{center}
 \input{./graphics/graph_trace_dist_mode_bounds_color}
 \end{center}
 %Difference goes exponentially small w.r.t.\ $p$ or $\rbr{\text{wave 
 %length}}^{-1}$
-}
 
-\only<3>{
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{All-modes Distances between the Density 
+Operators}{Bounds set by fidelity and \cref{eq:ineq-fvdg}}
+
 \begin{itemize}
-%\item Inserting \cref{eq:fidelity-pt} into \cref{eq:ineq-fvdg} and expanding 
-%$u$ at $\infty$ yields
-%\begin{equation}
-%\frac{3}{4} \ee^{-\frac{2 \pp  p}{\lambda }} \le 1-F \le T \le \sqrt{1-F^2} \le
-%\sqrt{\frac{3}{2}} \ee^{-\frac{\pp  p}{\lambda }}
-%\end{equation}
 
 \item `Go to the continuum limit': $\Lambda$ dimension regulator
 \begin{equation}
@@ -772,14 +768,13 @@ u \coloneqq \ee^q \equiv \ee^{\vbr{p}/T_\text{HD}}.
 \cfun{\exp}{\frac{2}{2\pp\Lambda}\int_0^{+\infty}\dd p\,\ln F^{\rbr{p}}} =
 \rfun{\exp}{-\frac{\pp}{9} \frac{T_\text{HD}}{\Lambda}}
 \end{equation}
-\end{itemize}}
+\end{itemize}
 
-\only<4>{
+
 \begin{center}
 \input{./graphics/graph_trace_dist_total_bounds_color}
 \end{center}
 %Difference goes exponentially small w.r.t.\ $T_\text{HD}$ or $M^{-1}$
-}
 
 \end{frame}
 
